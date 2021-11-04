@@ -13,13 +13,13 @@ class CadastroUnidadeHome extends StatefulWidget {
 }
 
 class _CadastroUnidadeHomeState extends State<CadastroUnidadeHome> {
-  var _exames = [
+  final _exames = [
     'Raio-X',
     'Hemograma',
     'Urina',
     'Fezes',
   ];
-  var _consultas = [
+  final _consultas = [
     'Pedriatria',
     'Cardiologia',
     'Clinico geral',
@@ -30,7 +30,7 @@ class _CadastroUnidadeHomeState extends State<CadastroUnidadeHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NavDrawer(),
+      drawer: const NavDrawer(),
       appBar: AppBar(
         title: const Text('Cadastro de Unidade de Saúde'),
       ),
